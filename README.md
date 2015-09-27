@@ -5,6 +5,7 @@ JS Sequence Diagrams [![Build Status](https://travis-ci.org/bramp/js-sequence-di
 
 by [Andrew Brampton](http://bramp.net) 2012-2015
 
+cli by [pmelisko](https://github.com/pmelisko) heavily inspired by [knsv/mermaid](https://github.com/knsv/mermaid)
 
 Example
 -------
@@ -76,6 +77,29 @@ make
 ```
 
 The Makefile will use npm to install all the dev dependencies, build, and test.
+
+Cli
+-------
+
+Command line version
+
+```bash
+$ bin/js-sequence-diagrams.js --help
+
+Usage: js-sequence-diagram [options] <file>...
+
+file    The js-sequence-diagram description file to be rendered
+
+Options:
+  -s --svg             Output SVG instead of PNG (experimental)
+  -p --png             If SVG was selected, and you also want PNG, set this flag
+  -o --outputDir       Directory to save files, will be created automatically, defaults to `cwd`
+  -e --phantomPath     Specify the path to the phantomjs executable
+  -t --css             Specify the path to a CSS file to be included when processing output
+  -c --theme              Specify name of theme [hand|simple], hand is default
+  -h --help            Show this message
+  -v --verbose         Show logging
+```
 
 Testing
 -------
