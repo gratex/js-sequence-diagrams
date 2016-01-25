@@ -1,6 +1,6 @@
 {
   "name": "js-sequence-diagrams",
-  "version" : "1.0.0",
+  "version" : "1.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/bramp/js-sequence-diagrams.git"
@@ -10,6 +10,7 @@
   },
   "license": "BSD",
   "dependencies": {
+    "phantomjs" : "^1.9.0",
     "which": "^1.0.8",
     "minimist": "^1.1.0",
     "semver": "^4.1.1",
